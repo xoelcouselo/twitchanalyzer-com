@@ -12,6 +12,8 @@ import { EmotionalAnalysisOfMessagesComponent } from './emotional-analysis-of-me
 import { UserLoyaltyComponent } from './user-loyalty/user-loyalty.component';
 import { StartInfoStreamerPanelComponent } from './start-info-streamer-panel/start-info-streamer-panel.component';
 
+import { RouterModule } from '@angular/router';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,12 +25,17 @@ import { StartInfoStreamerPanelComponent } from './start-info-streamer-panel/sta
     FutureProjectionsComponent,
     EmotionalAnalysisOfMessagesComponent,
     UserLoyaltyComponent,
-    StartInfoStreamerPanelComponent
+    StartInfoStreamerPanelComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+      { path: '', component: LandingHomeComponent },
+      { path: 'ranking', component: RankingComponent },
+      { path: '**', redirectTo: '/', pathMatch: 'full' },
+    ]),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
