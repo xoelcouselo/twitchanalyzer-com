@@ -1,0 +1,18 @@
+footer {
+  min-height: 20em;
+  background-color: #454545;
+  margin-bottom: 0 !important;
+}
+
+footer p {
+  color: #454545;
+}
+
+footer ul li a {
+  color: #454545;
+}
+
+.letters-footer {
+  color: white !important;
+  text-align: center;
+}
