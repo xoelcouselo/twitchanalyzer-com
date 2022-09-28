@@ -11,7 +11,7 @@
     <div class="row">
       <div class="col">
         <table
-          id="tablaArticulos"
+          id="tablaStreamers"
           class="table table-striped"
           style="width: 100%"
         >
@@ -46,34 +46,32 @@
     language="javascript"
     src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"
   ></script>
-  <!--
-<script
-  type="text/javascript"
-  language="javascript"
-  src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap5.min.js"
-></script>
--->
+
+  <script
+    type="text/javascript"
+    language="javascript"
+    src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap5.min.js"
+  ></script>
+
   <script>
     $(document).ready(function () {
       var url = "http://localhost:3000/api/articulos";
 
-      $("#tablaArticulos").DataTable({
+      $("#top100streamers").DataTable({
         ajax: {
           url: url,
           dataSrc: "",
         },
         columns: [
           { data: "name" },
-          { data: "urlimage" },
-          { data: "avgviewer" },
-          { data: "timestreamedhours" },
-          { data: "alltimepeakviewers" },
-          { data: "hourswatched" },
+          { data: "avg_viewers" },
+          { data: "time_streamed_hours" },
+          { data: "all_time_peak_viewers" },
+          { data: "hours_watched" },
           { data: "rank" },
-          { data: "followersgained" },
-          { data: "totalfollowers" },
-          { data: "totalsubscribersnow" },
-          { data: "totalviewers" },
+          { data: "followers_gained" },
+          { data: "total_followers" },
+          { data: "total_viewers" },
         ],
         columnDefs: [
           {

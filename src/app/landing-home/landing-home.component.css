@@ -63,6 +63,12 @@
   background-color: white;
 }
 
+/* Cards TOP Streamers */
+.card-clicker {
+  text-decoration: none;
+  text-decoration-style: none;
+}
+
 /* Animation */
 
 .parallax > use {
