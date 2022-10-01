@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UserLoyaltyComponent } from './user-loyalty.component';
+import { DashboardPageComponent } from './dashboard-page.component';
 
-describe('UserLoyaltyComponent', () => {
-  let component: UserLoyaltyComponent;
-  let fixture: ComponentFixture<UserLoyaltyComponent>;
+describe('DashboardPageComponent', () => {
+  let component: DashboardPageComponent;
+  let fixture: ComponentFixture<DashboardPageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ UserLoyaltyComponent ]
+      declarations: [ DashboardPageComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(UserLoyaltyComponent);
+    fixture = TestBed.createComponent(DashboardPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
