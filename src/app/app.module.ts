@@ -33,6 +33,7 @@ import { StreamerInfoComponent } from './streamer-info/streamer-info.component';
       { path: '', component: LandingHomeComponent },
       { path: 'ranking', component: RankingComponent },
       { path: 'bashboard-page', component: DashboardPageComponent },
+
       { path: '**', redirectTo: '/', pathMatch: 'full' },
     ]),
   ],

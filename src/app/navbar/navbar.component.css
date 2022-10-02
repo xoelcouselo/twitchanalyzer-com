@@ -1,3 +1,14 @@
+.navbar {
+  z-index: 100;
+  background: linear-gradient(
+    110deg,
+    #9926b9 0,
+    #771fa6 25%,
+    #531690 50%,
+    #2f0e79 75%,
+    #000764 100%
+  );
+}
 .nav-item a {
   color: white;
   font-family: "Lato", sans-serif;

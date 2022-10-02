@@ -1,5 +1,3 @@
-@import url(//fonts.googleapis.com/css?family=Lato:300:400);
-
 .header {
   position: relative;
   text-align: center;
@@ -67,6 +65,12 @@
 .card-clicker {
   text-decoration: none;
   text-decoration-style: none;
+}
+
+.card {
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
 }
 
 /* Animation */
